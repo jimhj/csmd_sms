@@ -1,6 +1,6 @@
 # CsmdSms
 
-创世漫道的短信发送gem
+[漫道](http://www.zucp.net/)的短信发送gem
 
 ## Installation
 
