@@ -1,6 +1,6 @@
 # CsmdSms
 
-TODO: Write a gem description
+创世漫道的短信发送Gem
 
 ## Installation
 
@@ -10,7 +10,7 @@ Add this line to your application's Gemfile:
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
 Or install it yourself as:
 
@@ -18,7 +18,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+require 'csmd_sms'
+
+CsmdSms.sn = "XXX-XXX-XXX-XXXXX"
+CsmdSms.password = "*******"
+CsmdSms.sign = "签名"
+arg = { mobile: '134XXXXX347', content: '短信验证码' }
+CsmdSms.send arg
+
+###OR
+arg = { 
+  sn: "XXX-XXX-XXX-XXXXX", 
+  password: "*******", 
+  sign: "签名", 
+  mobile: ['134XXXXX347', '159XXXXX235'], 
+  content: '短信验证码' 
+}
+
+CsmdSms.send arg
+```
 
 ## Contributing
 
