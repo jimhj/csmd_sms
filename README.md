@@ -24,8 +24,7 @@ require 'csmd_sms'
 CsmdSms.sn = "XXX-XXX-XXX-XXXXX"
 CsmdSms.password = "*******"
 CsmdSms.sign = "签名"
-arg = { mobile: '134XXXXX347', content: '短信验证码' }
-CsmdSms.send arg
+CsmdSms.send(mobile: '134XXXXX347', content: '短信验证码')
 ```
 
 ###OR
