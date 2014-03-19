@@ -1,6 +1,6 @@
 # CsmdSms
 
-创世漫道的短信发送Gem
+创世漫道的短信发送gem
 
 ## Installation
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-```
+```ruby
 require 'csmd_sms'
 
 CsmdSms.sn = "XXX-XXX-XXX-XXXXX"
@@ -26,8 +26,13 @@ CsmdSms.password = "*******"
 CsmdSms.sign = "签名"
 arg = { mobile: '134XXXXX347', content: '短信验证码' }
 CsmdSms.send arg
+```
 
 ###OR
+
+```ruby
+require 'csmd_sms'
+
 arg = { 
   sn: "XXX-XXX-XXX-XXXXX", 
   password: "*******", 
@@ -35,7 +40,6 @@ arg = {
   mobile: ['134XXXXX347', '159XXXXX235'], 
   content: '短信验证码' 
 }
-
 CsmdSms.send arg
 ```
 
